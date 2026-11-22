@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Velvet Vault — Midnight at the Aurora Grand</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a0d16;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  }
+  #stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  canvas {
+    display: block;
+    background: #10142a;
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.18), 0 0 0 1px #2a2f4a;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="1280" height="800"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
